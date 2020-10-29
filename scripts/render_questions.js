@@ -12,12 +12,16 @@ let questionValues = [100, 200, 300, 400, 500];
  *      HINT: Use a for/of loop 
  *      Need more help? Check out https://mzl.la/3lDHxIq or ask a volunteer.
  * 
- * 3. Create an HTML string for each question. It should look like this:
- *      <div class='question'><div class='question-cell'>VALUE</div></div>
+ * 3. Create an HTML string for each column and question. It should look like this:
+ *      <div class='questions-column'>
+ *          <div class='question-cell'>VALUE</div>
+ *          ...
+ *          <div class='question-cell'>VALUE</div>
+ *      </div>
  * 
  * 4. Replace VALUE in each string with the question's value.
  *      For example, the $500 question would be:
- *          <div class='question'><div class='question-title'>$500</div></div>
+ *          <div class='question-cell'>$500</div>
  *      HINT: Use the + operator on a string and a variable to join them!
  *      Need more help? Check out https://bit.ly/2EIsD3b or ask a volunteer.
  * 
