@@ -1,11 +1,12 @@
 let categories = [
-  "Celebrites",
-  "Places in NYC",
-  "Contries",
-  "Food",
-  "Stores",
-  "Painfully obvious"
+  "CELEBRITIES",
+  "PLACES IN NYC,
+  "STATES",
+  "FOOD",
+  "STORES",
+  "PAINFULLY OVIOUS"
 ];
+
 
 /* TODO: Program the following:
  *  Print the category titles.
@@ -34,7 +35,18 @@ let categories = [
  */
 function renderCategories() {
   for (let i = 0; i < categories.length; i++) {
-    var categorie =
-      "<div class='category'><div class='category-cell'>CATEGORY</div></div>";
+    //i += 1
+    //categories.length = 6
+    //first iteration: 0 < 6
+    //second iteration: i = 1; //1<6 true
+    //third iteration: i=2; 2<6 true
+    //fourth iteration: i=3; 3 <6 true
+    //fifth iteration: i=4; 4<6 true
+    //sixth iteration: i=5; 5<6 true
+    //seventh iteration: i=6, 6<6 false
+    let categorie =
+      "<div class='category'><div class='category-cell'>categories[i]</div></div>";
+      console.log(categorie);
   }
 }
+$("#categories").append(categories); 
