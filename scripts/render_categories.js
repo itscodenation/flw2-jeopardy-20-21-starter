@@ -1,6 +1,6 @@
 let categories = [
   "CELEBRITIES",
-  "PLACES IN NYC,
+  "PLACES IN NYC",
   "STATES",
   "FOOD",
   "STORES",
@@ -45,8 +45,8 @@ function renderCategories() {
     //sixth iteration: i=5; 5<6 true
     //seventh iteration: i=6, 6<6 false
     let categorie =
-      "<div class='category'><div class='category-cell'>categories[i]</div></div>";
+      "<div class='category'>"+ "<div class='category-cell'>"+categories[i]+"</div></div>";
       console.log(categorie);
+$("#categories").append(categorie); 
   }
 }
-$("#categories").append(categories); 
