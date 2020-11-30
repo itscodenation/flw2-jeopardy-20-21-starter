@@ -70,7 +70,7 @@ Below is the recommended order in which to complete the project.
 
 ## Extra Credit
 
-### Timing module
+### countdown_timer.js
 
 The game of Jeopardy is usually played with time constraints.
 
@@ -81,3 +81,5 @@ In our Jeopardy game, we don't have the ability to ring-in, so we're going to gi
 Here's how it should work:
 1. When the question is displayed, start a 10 second timer.
 1. When the time is up, automatically switch to the answer.
+
+Open up `countdown_timer.js` and follow the instructions.
