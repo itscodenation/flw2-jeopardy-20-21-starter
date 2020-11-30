@@ -131,6 +131,15 @@ body {
     text-align:center;
 }
 
+#question-modal-timer {
+    padding: 15px;
+    min-height: 16.43px;
+    font-size: 24px;
+    font-family: Helvetica;
+    font-weight: bold;
+    text-align:center;
+}
+
 #question-modal-actions {
     padding: 15px;
     text-align: center;

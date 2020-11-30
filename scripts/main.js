@@ -4,6 +4,7 @@ $(function() {
     renderQuestions();
     resizeFunction();
     attachClickHandlers();
+    attachCountdownTimerHandlers();
     attachScoringClickHandler();
     renderScoringButtons();
     $("#correct-button").click(() => hideQuestionPopup());

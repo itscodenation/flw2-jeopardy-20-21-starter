@@ -17,21 +17,22 @@
             <div id="question-modal-content">
                 <div id="question-modal-title"></div>
                 <div id="question-modal-text"></div>
+                <div id="question-modal-timer"></div>
                 <div id="question-modal-actions">
                     <div class="btn btn-primary" id="question-modal-show-answer">Show Answer</div>
                     <div class="btn btn-primary" id="question-modal-close">Close</div>
                 </div>
                 <div id="scoring-actions" style="display: none;">
-                    <div id="correct-button">
-                    <button type="button" class="btn btn-success score-button" id="correct-button">
-                        <span class="glyphicon glyphicon-ok"></span>Correct
-                      </button>
+                    <div>
+                        <button type="button" class="btn btn-success score-button" id="correct-button">
+                            <span class="glyphicon glyphicon-ok"></span>Correct
+                        </button>
                     </div>
-                    <div id="incorrect-button">
-                    <button type="button" class="btn btn-danger score-button" id="incorrect-button">
-                        <span class="glyphicon glyphicon-remove"></span>Wrong
-                    </button>
-                </div>
+                    <div>
+                        <button type="button" class="btn btn-danger score-button" id="incorrect-button">
+                            <span class="glyphicon glyphicon-remove"></span>Wrong
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,6 +44,7 @@
 <script src="scripts/render_categories.js"></script>
 <script src="scripts/render_questions.js"></script>
 <script src="scripts/click_handlers.js"></script>
+<script src="scripts/countdown_timer.js"></script>
 <script src="scripts/scoring.js"></script>
 <script src="scripts/questions.js"></script>
 <script src="scripts/main.js"></script>
