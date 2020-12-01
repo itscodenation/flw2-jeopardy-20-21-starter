@@ -5,14 +5,14 @@
  *      HINT: Use the show() method in jQuery;
  *      Need more help? Check out https://api.jquery.com/show/ or ask a volunteer.
  * 
- * 2. Attach click handlers to `#correct-button` and `#incorrect-button` to update the score.
- *      HINT: Finish the `addToScore' and subtractFromScore` helper methods below first.
- *      Need more help? Ask a volunteer.
- * 
- * 3. Attach a click handler to `#question-modal-show-answer` which hides `#question-modal-actions` 
+ * 2. Attach a click handler to `#question-modal-show-answer` which hides `#question-modal-actions` 
  *          and shows `#scoring-actions`.
  *      HINT: Use the `hide()` and `show()` methods in jQUery;
  *      Need more help? Check out https://api.jquery.com/ or ask a volunteer.
+ * 
+ * 3. Attach click handlers to `#correct-button` and `#incorrect-button` to update the score.
+ *      HINT: Finish the `addToScore' and subtractFromScore` helper methods below first.
+ *      Need more help? Ask a volunteer.
  */
 
 function renderScoringButtons() {
