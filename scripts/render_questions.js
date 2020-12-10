@@ -1,4 +1,4 @@
-let numCategories = categories.length;
+pk let numCategories = categories.length;
 let questionValues = [100, 200, 300, 400, 500];
 
 /* TODO: Program the following: 
@@ -39,5 +39,12 @@ let questionValues = [100, 200, 300, 400, 500];
  *      Need more help? Check out https://bit.ly/2EIsD3b or ask a volunteer.
  */
 function renderQuestions() {
-    // Add code here
+    for (let i = 0; i < numCategories; i++) {
+        let questionHtml = "<div class='questions-column'>";
+        for (let questionValue of questionValues) {
+            questionHtml += "<div class='question-cell' data-category='" + i + "'>$" + questionValue + "</div>";
+        }
+        questionHtml += "</div>";
+        $("#questions").append(questionHtml);
+    }
 }
