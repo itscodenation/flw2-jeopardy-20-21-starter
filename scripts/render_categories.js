@@ -23,12 +23,12 @@ let categories = [
  *      HINT: Use the + operator on a string and a variable to join them!
  *      Need more help? Check out https://bit.ly/2EIsD3b or ask a volunteer.
  * 
- * 4. Use jQUery's append function to add your HTML string to the #categories div.
+ * 4. Use jQUery's append method to add your HTML string to the #categories div.
  *      HINT: Use $(selector).append(html);
  *      Need more help? Check out https://api.jquery.com/append/ or ask a volunteer.
  *
  * BONUS: Make all the category names UPPERCASE.
- *      HINT: Use the toUpperCase() function.
+ *      HINT: Use the toUpperCase() method.
  *      TRIVIA: Why is it called UPPERCASE? 
  *      Answer: https://bit.ly/3gOwrga
  */
