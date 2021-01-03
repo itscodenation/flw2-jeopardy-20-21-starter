@@ -40,13 +40,13 @@ function renderScoringButtons() {
 function subtractFromScore() {
   let score = getCurrentScore();
   let questionVal = currentQuestionValue;
-  let updateVal = score - questionVal;
+  let updateval = score - questionVal;
   $("#current-score").html(updateval);
 }
 
 function addToScore() {
   let score = getCurrentScore();
   let questionVal = currentQuestionValue;
-  let updateVal = score + questionVal;
+  let updateval = score + questionVal;
   $("#current-score").html(updateval);
 }
