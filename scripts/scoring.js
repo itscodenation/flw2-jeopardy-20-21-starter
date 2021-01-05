@@ -16,8 +16,15 @@
  */
 
 function renderScoringButtons() {
-    // Add code here
-}
+    $("#score").show();
+    $("#correct-button").click(() => addToScore());
+    $("#incorrect-button").click(() => subtractFromScore());
+    $("#question-modal-show-answer").click(() => {
+      $("#scoring-actions").show();
+      $("#question-modal-actions").hide();
+    });
+  }
+
 
 /* TODO: Program the following:
  *  Update the score.
@@ -38,9 +45,16 @@ function renderScoringButtons() {
  *      HINT: Compute the new score and then call the helper function.
 */
 function subtractFromScore() {
-    // Add code here
-}
+    let score = getCurrentScore();
+    let questionval = currentQuestionValue;
+    let updateval = score - questionval;
+    $("#current-score").html(updateval);
+  }
 
 function addToScore() {
-    // Add code here
-}
+    let score = getCurrentScore();
+    let questionval = currentQuestionValue;
+    let updateval = score + questionval;
+    $("#current-score").html(updateval);
+  }
+
