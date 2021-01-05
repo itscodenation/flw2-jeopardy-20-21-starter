@@ -20,11 +20,17 @@
  * THIS ONE IS HARD! DON'T WORRY IF YOU NEED TO ASK FOR HELP!
  */
 function attachCountdownTimerHandlers() {
-  // Add code here.
-}
+  $(".question-cell").each((index, questionElement) => {
+$(questionElement).click(() => {
+startCountdownTimer(10, shouldcancel, outoftime);
+});
+  });
+
+}  
 
 function disableCorrectButton() {
   // Only allow the user to press the "wrong" button.
+  $("#scoring-actions").show();
   $("#correct-button").prop("disabled", true);
 }
 
@@ -46,6 +52,7 @@ function startCountdownTimer(secondsRemaining, shouldCancel, timeoutCallback) {
   if (!shouldCancel || !timeoutCallback) {
     console.error("Missing callbacks to start countdown timer function");
     return;
+    
   }
 
   if (shouldCancel()) {
