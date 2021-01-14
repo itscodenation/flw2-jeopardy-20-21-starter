@@ -38,14 +38,14 @@ let questionValues = [100, 200, 300, 400, 500];
  *      HINT: Use the + operator on a string and a variable to join them!
  *      Need more help? Check out https://bit.ly/2EIsD3b or ask a volunteer.
  */
-function renderQuestions() {
+  function renderQuestions() {
   for (let i = 0; i < numCategories; i++) {
-    let questionhtml = "<div class='questions-column'>";
-    for (let value of questionValues) {
-      questionhtml +=
+     let questionhtml = "<div class='questions-column'>";
+     for (let value of questionValues) {
+       questionhtml +=
         "<div class=' question-cell' data-category='" + i + "'>$" + value + "</div>";
     }
-    questionhtml += "</div>";
+     questionhtml += "</div>";
     $("#questions").append(questionhtml);
   }
 }
