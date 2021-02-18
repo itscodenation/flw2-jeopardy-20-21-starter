@@ -40,7 +40,7 @@ function attachClickHandlers() {
     let categoryIndex = $(questionElement).attr("data-category");
     let moneyValue = $(questionElement).text().replace("$", "");
     $(questionElement).click(() => {
-      // Add code here
+      questionOnClick(categoryIndex, moneyValue);
     });
   });
 }
@@ -60,13 +60,13 @@ function questionOnClick(categoryIndex, moneyValue) {
   $("#question-modal-text").html(question.question_text);
   $("#question-modal-show-answer")
     .click(() => {
-      // Add code here
+      answerOnClick(categoryIndex, moneyValue);
       console.log("I just got clicked, I wish I could do more though!");
     })
     .show();
 
   $("#question-modal-close").click(() => {
-    // Add code here
+    $("#question-modal").modal("hide");
     console.log("I just got clicked, I wish I could do more though!");
   });
   $("#question-modal").modal("show");

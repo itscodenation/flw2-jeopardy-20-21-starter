@@ -33,5 +33,13 @@ let categories = [
  *      Answer: https://bit.ly/3gOwrga
  */
 function renderCategories() {
-    // Add code here
-}
+    for (const element of categories) {
+    let categorieshtml = "<div class='category'>";
+    categorieshtml +=
+    "<div class='category-cell'>" + element.toUpperCase() + "</div></div>";
+    $("#categories").append(categorieshtml);
+      }
+    }
+  
+   
+  
